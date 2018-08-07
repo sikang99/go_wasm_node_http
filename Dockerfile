@@ -1,4 +1,4 @@
-FROM nlepage/golang_wasm AS builder
+FROM go:1.11beta3-alpine3.8
 COPY ./ src/app/
 RUN go build -o app.wasm app
 
