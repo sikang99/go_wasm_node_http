@@ -53,8 +53,8 @@ docker-run dr:
 
 # ----------------------------------------------------------------
 git-update gu:
-	git add Makefile Dockerfile
-	git commit -m "add Makefile Dockerfile"
+	git add .gitignore Makefile Dockerfile
+	git commit -m "modify contents"
 	git config credential.helper store
 	git push https://github.com/sikang99/go_wasm_node_http.git
 
