@@ -52,10 +52,16 @@ docker-run dr:
 	docker run -t -p 3000:3000 go-node
 
 # ----------------------------------------------------------------
+git-init gi:
+	git init
+	git config credential.helper store
+	git add README.md
+	git commit -m "add README.md"
+	git push https://github.com/sikang99/go_wasm_node_http.git
+
 git-update gu:
 	git add .gitignore Makefile Dockerfile
 	git commit -m "modify contents"
-	git config credential.helper store
 	git push https://github.com/sikang99/go_wasm_node_http.git
 
 # ----------------------------------------------------------------
