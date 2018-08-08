@@ -14,6 +14,9 @@ edit e:
 	@echo "make (edit) [docker|readme|make]"
 	@echo ""
 
+edit-go eg:
+	vi hello.go
+
 edit-docker ed:
 	vi Dockerfile
 
