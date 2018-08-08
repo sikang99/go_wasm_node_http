@@ -1,7 +1,8 @@
-FROM golang:1.11beta3-alpine3.8
+FROM golang:1.11beta3-alpine3.8 as builder
 COPY ./ src/app/
 RUN go version
-RUN go build -o app.wasm app
+RUN GOOS=js GOARCH=wasm go build -o app.wasm app
+RUN ls -al /go/app.wasm
 
 FROM node:8-alpine
 EXPOSE 3000
