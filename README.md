@@ -16,5 +16,5 @@ It's actually very easy. The only thing I got caught up by is the documentation 
 
 
 ## History
-2018/08/07 : Modify Dockerfile to use golang latest version and fix some errors
-2018/08/06 : Forked from [trashhalo/go_wasm_node_http](https://github.com/trashhalo/go_wasm_node_http)
+- 2018/08/07 : Modify Dockerfile to use golang latest version and fix some errors
+- 2018/08/06 : Forked from [trashhalo/go_wasm_node_http](https://github.com/trashhalo/go_wasm_node_http)
