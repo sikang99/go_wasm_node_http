@@ -13,3 +13,8 @@ It's actually very easy. The only thing I got caught up by is the documentation 
 # Running
 1. run the server! `docker run -t -p 3000:3000 go-node`
 2. Open your browser to http://localhost:3000
+
+
+## History
+2018/08/07 : Modify Dockerfile to use golang latest version and fix some errors
+2018/08/06 : Forked from [trashhalo/go_wasm_node_http](https://github.com/trashhalo/go_wasm_node_http)

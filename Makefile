@@ -63,7 +63,7 @@ git-init gi:
 	git push https://github.com/sikang99/go_wasm_node_http.git
 
 git-update gu:
-	git add .gitignore Makefile Dockerfile
+	git add .gitignore README.md Makefile Dockerfile
 	git commit -m "modify contents"
 	git push https://github.com/sikang99/go_wasm_node_http.git
 
