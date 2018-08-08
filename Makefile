@@ -49,7 +49,7 @@ docker-edit de:
 	vi Dockerfile
 
 docker-build db:
-	docker build -t go-node
+	docker build -t go-node .
 
 docker-run dr:
 	docker run -t -p 3000:3000 go-node

@@ -1,5 +1,6 @@
-FROM go:1.11beta3-alpine3.8
+FROM golang:1.11beta3-alpine3.8
 COPY ./ src/app/
+RUN go version
 RUN go build -o app.wasm app
 
 FROM node:8-alpine
