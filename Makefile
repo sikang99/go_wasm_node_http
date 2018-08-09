@@ -54,7 +54,17 @@ docker-build db:
 docker-run dr:
 	docker run -t -p 3000:3000 go-node
 
+docker-clean dc:
+	docker image prune -f
+	docker system prune -f
+	docker volume prune -f
+
 # ----------------------------------------------------------------
+git g:
+	@echo ""
+	@echo "make (git) [init|update]"
+	@echo ""
+
 git-init gi:
 	git init
 	git config credential.helper store
@@ -63,7 +73,7 @@ git-init gi:
 	git push https://github.com/sikang99/go_wasm_node_http.git
 
 git-update gu:
-	git add .gitignore README.md Makefile Dockerfile node-hello.js
+	git add .gitignore README.md Makefile Dockerfile node-hello.js docker-compose
 	git commit -m "add and modify contents"
 	git push https://github.com/sikang99/go_wasm_node_http.git
 
