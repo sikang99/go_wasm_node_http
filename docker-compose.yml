@@ -1,7 +1,8 @@
-version: '3.6'
+version: '3'
 
 services:
     go_wasm_node_http:
-        image: go-node
+        image: go-code
+        build: .
         ports:
             - 3000:3000

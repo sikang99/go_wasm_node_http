@@ -22,4 +22,5 @@ It's actually very easy. The only thing I got caught up by is the documentation 
 
 ## References
 - [Running a Go API with Hot Reloading and Docker](https://www.zachjohnsondev.com/posts/go-docker-hot-reload-example/)
+- [Get started with Docker Compose](https://docs.docker.com/compose/gettingstarted/)
 
