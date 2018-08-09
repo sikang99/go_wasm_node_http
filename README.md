@@ -16,7 +16,7 @@ It's actually very easy. The only thing I got caught up by is the documentation 
 
 
 ## History
-- 2018/08/09 : Add docker-compose
+- 2018/08/09 : Add docker-compose.yml and modify Makefile to support it
 - 2018/08/07 : Modify Dockerfile to use golang latest version and fix some errors
 - 2018/08/06 : Forked from [trashhalo/go_wasm_node_http](https://github.com/trashhalo/go_wasm_node_http)
 
