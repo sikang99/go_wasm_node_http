@@ -55,9 +55,25 @@ docker-run dr:
 	docker run -t -p 3000:3000 go-node
 
 docker-clean dc:
-	docker image prune -f
-	docker system prune -f
-	docker volume prune -f
+	@docker image prune -f
+	@docker system prune -f
+	@docker volume prune -f
+	@docker container prune -f
+	@docker network prune -f
+
+compose c:
+	@echo ""
+	@echo "make (compose) [edit|up|down]"
+	@echo ""
+
+compose-edit ce:
+	vim docker-compose.yml
+
+compose-up cu:
+	docker-compose up -d
+
+compose-down cd:
+	docker-compose down
 
 # ----------------------------------------------------------------
 git g:
@@ -73,7 +89,7 @@ git-init gi:
 	git push https://github.com/sikang99/go_wasm_node_http.git
 
 git-update gu:
-	git add .gitignore README.md Makefile Dockerfile node-hello.js docker-compose
+	git add .gitignore README.md Makefile Dockerfile node-hello.js docker-compose.yml
 	git commit -m "add and modify contents"
 	git push https://github.com/sikang99/go_wasm_node_http.git
 
