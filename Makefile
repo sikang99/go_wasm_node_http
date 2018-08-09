@@ -11,14 +11,11 @@ usage:
 # ----------------------------------------------------------------
 edit e:
 	@echo ""
-	@echo "make (edit) [docker|readme|make]"
+	@echo "make (edit) [go|readme|make]"
 	@echo ""
 
 edit-go eg:
 	vi hello.go
-
-edit-docker ed:
-	vi Dockerfile
 
 edit-readme er:
 	vi README.md
